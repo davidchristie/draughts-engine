@@ -1,0 +1,19 @@
+.container {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 5px solid black;
+}
+
+.white {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+
+.black {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(80, 80, 80);
+}
