@@ -200,7 +200,7 @@ export function App(): ReactNode {
         <h2>Status: {engine.status ?? ""}</h2>
       </div>
       <div style={{ maxWidth: "600px" }}>
-        <h2>Available Moves</h2>
+        <h2>Best Move</h2>
         <button
           style={{ fontSize: "large", padding: "10ox" }}
           disabled={engine.moves.length === 0}
@@ -210,6 +210,12 @@ export function App(): ReactNode {
         >
           Play best move
         </button>
+        <pre style={{ padding: "5px", backgroundColor: "lightgray" }}>
+          {JSON.stringify(engine.bestMove, null, 2)}
+        </pre>
+      </div>
+      <div style={{ maxWidth: "600px" }}>
+        <h2>Available Moves</h2>
         {engine.moves.map((move, index) => (
           <div
             key={index}
